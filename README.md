@@ -1,7 +1,8 @@
 # MovieRecommendation
 
 Step 1: Term Frequency (TF)
-Term Frequency also known as TF measures the number of times a term (word) occurs in a document. Given below are the terms and their frequency on each of the document.
+
+Given below are the terms and their frequency on each of the document.
 
 TF for Document 1
 
@@ -36,3 +37,19 @@ Given below is the code in python which i used for  normalized TF calculation.
              normalizeDocument = document.lower().split()
              return normalizeDocument.count(term.lower()) / float(len(normalizeDocument))
  
+Step 2: Inverse Document Frequency (IDF)
+The main purpose of doing a search is to find out relevant documents matching the query.
+
+Given below is the python code to calculate IDF
+
+
+          def inverseDocumentFrequency(term, allDocuments):
+                    numDocumentsWithThisTerm = 0
+                    for doc in allDocuments:
+                    if term.lower() in allDocuments[doc].lower().split():
+                              numDocumentsWithThisTerm = numDocumentsWithThisTerm + 1
+ 
+                    if numDocumentsWithThisTerm > 0:
+                              return 1.0 + log(float(len(allDocuments)) / numDocumentsWithThisTerm)
+                    else:
+                              return 1.0

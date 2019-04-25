@@ -60,3 +60,22 @@ Then i written following piece of code for cosine similarity
            return dot(query_vec,doc_vec)/(norm(query_vec)*norm(doc_vec))
            
 and returning the top 3 in the document vector for the android application to display.
+
+# Executing the application :
+
+Clone the whole repository
+Extract Example1.zip folder in the Android Application folder
+Download and install Android Studio Version 3.3
+Download and install Java runtime
+Open Android Studio
+Import the Example1 extracted folder.
+Build the project and run it
+
+# References
+
+https://github.com/jaquine/Cosine-similarity-Tf-Idf-/blob/master/DocumentParser.java
+
+https://stackoverflow.com/questions/27685839/removing-stopwords-from-a-string-in-java
+
+https://github.com/BhaskarTrivedi/QuerySearch_Recommentation_Classification.
+

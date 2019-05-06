@@ -68,6 +68,17 @@ and returning the top 3 in the document vector for the android application to di
 #Classification:
 ---------------------------------------
 
+For implementing the classification i used naive bayes algorithm. Naive Bayes model is easy to build and particularly useful for very large data sets. Along with simplicity, Naive Bayes is known to outperform even highly sophisticated classification methods.
+
+Bayes theorem provides a way of calculating posterior probability P(c|x) from P(c), P(x) and P(x|c). 
+
+                    P(c/x) = (P(x/c) * p(c) ) / p(x)
+
+P(c|x) is the posterior probability of class (c, target) given predictor (x, attributes).
+P(c) is the prior probability of class.
+P(x|c) is the likelihood which is the probability of predictor given class.
+P(x) is the prior probability of predictor.
+
 # Executing the application :
 
 Download .apk file.

@@ -129,3 +129,5 @@ https://stackoverflow.com/questions/27685839/removing-stopwords-from-a-string-in
 
 https://github.com/BhaskarTrivedi/QuerySearch_Recommentation_Classification.
 
+https://machinelearningmastery.com/naive-bayes-classifier-scratch-python/
+

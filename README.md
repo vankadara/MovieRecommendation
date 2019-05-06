@@ -108,6 +108,11 @@ To split the movie dataset into training and test i used below code
           
 And after calculating class probabilities for the code, i used top 1 result to show the genre, the given query belongs to.
 
+#Challenges:
+	
+The challenging part in building the classifier is to knowing the algorithm and implementing the algorithm and especially in stage of calculating the class probablities and computing the class to which the query belongs to. But i used the materials given by professor and those were very helpful and handy while designing the entire project.
+
+
 
 # Executing the application :
 

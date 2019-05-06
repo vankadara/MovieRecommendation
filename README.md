@@ -79,6 +79,36 @@ P(c) is the prior probability of class.
 P(x|c) is the likelihood which is the probability of predictor given class.
 P(x) is the prior probability of predictor.
 
+TO read the movie dataset file i used following code 
+                    
+                    data = pd.read_csv("../input/movie_metadata.csv")
+                   
+To split the movie dataset into training and test i used below code
+
+                    def splitDataset(dataset, splitRatio):
+	trainSize = int(len(dataset) * splitRatio)
+	trainSet = []
+	copy = list(dataset)
+	while len(trainSet) < trainSize:
+		index = random.randrange(len(copy))
+		trainSet.append(copy.pop(index))
+	return [trainSet, copy]
+          
+ For calculating the class probabilities
+ 
+                    def calculateClassProbabilities(summaries, inputVector):
+	probabilities = {}
+	for classValue, classSummaries in summaries.iteritems():
+		probabilities[classValue] = 1
+		for i in range(len(classSummaries)):
+			mean, stdev = classSummaries[i]
+			x = inputVector[i]
+			probabilities[classValue] *= calculateProbability(x, mean, stdev)
+	return probabilities
+          
+And after calculating class probabilities for the code, i used top 1 result to show the genre, the given query belongs to.
+
+
 # Executing the application :
 
 Download .apk file.

@@ -131,7 +131,8 @@ https://github.com/BhaskarTrivedi/QuerySearch_Recommentation_Classification.
 
 https://machinelearningmastery.com/
 
-#Brochure & Video:
+
+# Brochure & Video
 
 You can find project brochure and video on my homepage under posts section
 

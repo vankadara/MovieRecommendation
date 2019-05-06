@@ -1,5 +1,8 @@
 # MovieRecommendation
 
+#Search
+------------------------
+
 In phase 1 of movie recommendation is to develop a search engine using tf-idf and cosine similarity and below are the steps describing the phase 1 implementation.
 
 Am reading the dataset and tokenizing the text in the overview column and removing the stop words in it. Updating the count of each terms in the postings array
@@ -61,15 +64,16 @@ Then i written following piece of code for cosine similarity
            
 and returning the top 3 in the document vector for the android application to display.
 
+
+#Classification:
+---------------------------------------
+
 # Executing the application :
 
-Clone the whole repository
-Extract Example1.zip folder in the Android Application folder
-Download and install Android Studio Version 3.3
-Download and install Java runtime
-Open Android Studio
-Import the Example1 extracted folder.
-Build the project and run it
+Download .apk file.
+Install the .apk file in your mobile.
+After successful installation, search for the application with name ServerConnection.
+Provide admin as both username and password.
 
 # References
 
